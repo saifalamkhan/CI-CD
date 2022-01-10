@@ -9,9 +9,13 @@ on:
   push:
     branches:
       - skdev
+    paths:
+      - 'src/force-app/**'
   pull_request:
     branches:
       - skdev
+    paths:
+      - 'src/force-app/**'
   # Also trigger on page_build, as well as release created events
 
 jobs:
@@ -58,4 +62,4 @@ jobs:
       id: Validate
       if: github.event_name == 'push'
       run:
-        node_modules/sfdx-cli/bin/run force:source:deploy -p src -u skdev --json --loglevel fatal -c
+        node_modules/sfdx-cli/bin/run force:source:deploy -p src/** -u skdev --json --loglevel fatal -c
