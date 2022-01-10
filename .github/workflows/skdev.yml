@@ -58,4 +58,4 @@ jobs:
       id: Validate
       if: github.event_name == 'push'
       run:
-        node_modules/sfdx-cli/bin/run force:source:deploy -x src/manifest/package.xml -u skdev --json --loglevel fatal -c
+        node_modules/sfdx-cli/bin/run force:source:deploy -p src/force-app -u skdev --json --loglevel fatal -c
