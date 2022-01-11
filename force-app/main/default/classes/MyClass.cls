@@ -8,7 +8,7 @@ public with sharing class MyClass {
 		//b
 		//c
 		//d
-		//
+		//e
 		return '1.0.0';
 	}
 }
