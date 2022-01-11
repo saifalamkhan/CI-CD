@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI_SKDEV
+name: CI_demo
 
 # Controls when the workflow will run
 # Trigger the workflow on push or pull request,
@@ -8,12 +8,12 @@ name: CI_SKDEV
 on:
   push:
     branches:
-      - skdev
+      - demo
     paths:
       - 'src/force-app/**'
   pull_request:
     branches:
-      - skdev
+      - demo
     paths:
       - 'src/force-app/**'
   # Also trigger on page_build, as well as release created events
