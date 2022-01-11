@@ -8,12 +8,12 @@ name: CI_SKDEV2
 on:
   push:
     branches:
-      - skdev
+      - test
     paths:
       - 'src/force-app/**'
   pull_request:
     branches:
-      - skdev
+      - test
     paths:
       - 'src/force-app/**'
   # Also trigger on page_build, as well as release created events
